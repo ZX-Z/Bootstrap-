@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />		
+		<title>下拉菜单和滚动监听插件</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />		
+	</head>
+	<body >
+		
+		<!--<div class="dropdown" id="dropdown">
+			<button class="btn btn-primary" data-toggle="dropdown">
+				下拉菜单
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">资讯</a></li>
+				<li><a href="#">产品</a></li>
+				<li><a href="#">关于</a></li>
+			</ul>
+			
+		</div>-->
+		
+		
+		<nav id="nav" class="navbar navbar-default">
+			<a href="#" class="navbar-brand">Web开发</a>
+			<ul class="nav navbar-nav">
+				<li><a href="#html5">HTML5</a></li>
+				<li><a href="#bootstrap">Bootstrap</a></li>
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown">JavaScript<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#jquery">jQuery</a></li>
+						<li><a href="#yui">Yui</a></li>
+						<li><a href="#extjs">ExtJS</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
+		<!--放在下面div中，与脚本作用一致--> 
+		<div data-offset="0" data-spy="scroll" data-target="#nav" id="content" style="padding: 0 10px;height: 200px;overflow: auto;position: relative;">
+			<section class="sec">
+				<h4 id="html5">HTML5<a href="#" onclick="removeSec(this)">删除</a></h4>
+			    <p>万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改</p>
+			</section>
+			<section class="sec">
+				<h4 id="bootstrap">Bootstrap</h4>
+			    <p>Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。</p>
+			</section>
+			<section class="sec">
+			   <h4 id="jquery">jQuery</h4>
+			   <p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）</p>
+			</section>
+			<section class="sec">
+			   <h4 id="yui">Yui</h4>
+			   <p>YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.</p>
+			</section>
+			<section class="sec">
+			   <h4 id="extjs">Extjs</h4>
+			   <p>extjs是一种软件。自动生成行号，支持checkbox全选，动态选择显示哪些列，支持本地以及远程分页，可以对单元格按照自己的想法进行渲染，这些也算可以想到的功能extjs是一种软件。自动生成行号，支持checkbox全选，动态选择显示哪些列，支持本地以及远程分页，可以对单元格按照自己的想法进行渲染，这些也算可以想到的功能extjs是一种软件。自动生成行号，支持checkbox全选，动态选择显示哪些列，支持本地以及远程分页，可以对单元格按照自己的想法进行渲染，这些也算可以想到的功能extjs是一种软件。自动生成行号，支持checkbox全选，动态选择显示哪些列，支持本地以及远程分页，可以对单元格按照自己的想法进行渲染，这些也算可以想到的功能extjs是一种软件。自动生成行号，支持checkbox全选，动态选择显示哪些列，支持本地以及远程分页，可以对单元格按照自己的想法进行渲染，这些也算可以想到的功能</p>
+		    </section>
+		</div>
+	
+	
+	
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+//		
+//		$("#dropdown").on("show.bs.dropdown",function(){
+//			alert("调用show方法时执行");
+//		});
+        
+        
+//      $("#content").scrollspy({
+//      	offset:0,
+//      	target:"#nav",
+//      });与上面div块中设置的data属性作用相同
+//      
+//      $("#nav").on("activate.bs.scrollspy",function(){
+//      	alert("新条目被激活");
+//      });
+
+
+        function removeSec(e){
+        	
+        	$(e).parents(".sec").remove();
+        	$("#content").scrollspy("refresh");
+        }
+		
+	</script>
+</html>
+

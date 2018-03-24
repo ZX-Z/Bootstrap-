@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />		
+		<title>标签页</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />	
+	</head>
+	<body  style="margin: 200px;">	
+		<!--<ul class="nav  nav-pills">
+			<li class="active"><a href="#html5" data-toggle="tab">HTML5</a></li>
+			<li><a href="#bootstrap" data-toggle="tab">Bootstrap</a></li>
+			<li><a href="#jquery" data-toggle="tab">jQuery</a></li>
+			<li><a href="#extjs" data-toggle="tab">Extjs</a></li>
+		</ul>-->
+		
+		<ul id="nav" class="nav  nav-tabs">
+			<li class="active"><a href="#html5" >HTML5</a></li>
+			<li><a href="#bootstrap" >Bootstrap</a></li>
+			<li><a href="#jquery" >jQuery</a></li>
+			<li><a href="#extjs">Extjs</a></li>
+		</ul>
+		
+		<div class="tab-content" style="padding: 10px;">
+	        <div class="tab-pane fade in active" id="html5">万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改</div>
+		    <div class="tab-pane fade" id="bootstrap">Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。</div>
+   		    <div class="tab-pane fade" id="jquery">jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）</div>
+	  	    <div class="tab-pane fade" id="extjs">YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.</div>
+		
+		</div>
+		
+		
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$("#nav a").on("click",function(e){
+			//阻止默认行为
+			e.preventDefault();
+			$(this).tab("show");
+			
+		});
+		$("#nav a").on("show.bs.tab",function(){
+			alert("调用前触发");
+		});
+	</script>
+</html>
